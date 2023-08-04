@@ -14,12 +14,27 @@ int my_strlen(char* str)
 	return count;
 }
 
+int my_strlen2(char* str)
+{
+	if (*str != '\0')
+	{
+		return 1 + my_strlen2(str + 1);
+	}
+	else
+	{
+		return 0;
+	}
+}
+
 int main() 
 {
 	char arr[] = "bit";
 	
 	int len = my_strlen(arr);
-	printf("%d\n", len);
+	printf("len = %d\n", len);
+
+	int len2 = my_strlen2(arr);
+	printf("len2 = %d\n", len2);
 
 	return 0;
 }
