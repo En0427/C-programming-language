@@ -22,7 +22,7 @@ void game()
 	ret = rand() % 100 + 1; //generate a ranfom number from 1-100
 	while (1)
 	{
-		printf("plase guess number\n");
+		printf("please guess number\n");
 		scanf("%d", &guess);
 		if (guess > ret) 
 		{
