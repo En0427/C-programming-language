@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNING 1
+#define _CRT_SECURE_NO_WARNINGS 1
 
 //交换两个int变量，不能使用第三个变量。即 a=3,b=5，交换之后 a=5,b=3；
 
