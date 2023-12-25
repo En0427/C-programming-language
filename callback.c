@@ -6,10 +6,10 @@ void print(char *str)
 	printf("hello: %s\n", str);
 }
 
-void test(void(*p)(char *str))
+void test(void(*p)(char *))
 {
 	printf("Callback\n");
-	p("Hello bit!\n");
+	p("Hello bit!");
 }
 
 int main()
